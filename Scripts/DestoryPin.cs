@@ -13,9 +13,9 @@ public class DestoryPin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int count = 0;
+        /*int count = 0;
         if(count = 0){
-            
-        }
+
+        }*/
     }
 }

@@ -18,7 +18,7 @@ public class Throw1 : MonoBehaviour
     void Update()
     {
         //INCREASES THE POWER OF THE BALL
-        if(Input.GetKey(KeyCode.UpArrow)){
+        if(Input.GetKeyDown(KeyCode.UpArrow)){
         speed = speed + 1000f;
         //Console.WriteLine(speed);
         if(speed >= 10000f){
@@ -27,7 +27,7 @@ public class Throw1 : MonoBehaviour
        }
 
        //DECREASES THE POWER OF THE BALL
-       if(Input.GetKey(KeyCode.DownArrow)){
+       if(Input.GetKeyDown(KeyCode.DownArrow)){
         speed = speed - 1000f;
         //Console.WriteLine(speed);
         if(speed<0f){
