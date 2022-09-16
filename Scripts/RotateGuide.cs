@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : MonoBehaviour
+public class RotateGuide : MonoBehaviour
 {
-    Rigidbody rb;
-    public float torque = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +13,9 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //ROTATES AROUND THE BALL
+        if(Input.GetKey(KeyCode.A)){
+            //transform.Rotate(2, 0, 0,);
+        }
     }
 }
