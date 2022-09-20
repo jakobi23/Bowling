@@ -5,7 +5,7 @@ using UnityEngine;
 public class ResetBall : MonoBehaviour
 {
     Rigidbody rb;
-
+    GameObject BowlingBall;
     public int turnCount = 0;
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,9 @@ public class ResetBall : MonoBehaviour
     {
         float yPos = transform.position.y;
         if(yPos <=-9.14){
-            //DestroyGameObject(BowlingBall);
+            Destroy(BowlingBall);
             turnCount++;
-            //Create(gameObject);
+            BowlingBall = Instantiate(BowlingBall, Create.starting, Quaternion.identity);
         }
     }
 }

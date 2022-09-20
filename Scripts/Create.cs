@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Create : MonoBehaviour
 {
-    Vector3 starting = new Vector3((float) 0.09,(float) 4.889, (float) -21.21);
+    public Vector3 starting = new Vector3((float) 0.09,(float) 4.889, (float) -21.21);
     public GameObject BowlingBall;
     // Start is called before the first frame update
     void Start()

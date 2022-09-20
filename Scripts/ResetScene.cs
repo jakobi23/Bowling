@@ -13,6 +13,14 @@ public class ResetScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int count =0;
+        if(ResetBall.turnCount = 2){
+            if(count == 200){
+            SceneManager.LoadScene("SampleScene");
+            }
+            else{
+                count++;
+            }
+        }
     }
 }
