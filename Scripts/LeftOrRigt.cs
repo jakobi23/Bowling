@@ -20,12 +20,12 @@ public class LeftOrRigt : MonoBehaviour
 
       //moves object to the left by 0.5 units
       if(Input.GetKeyDown(KeyCode.LeftArrow)){
-        transform.Translate(-0.01f, 0f, 0f);
+        transform.Translate(-0.05f, 0f, 0f);
       }
 
       //moves the object to the right by 0.5 units
       if(Input.GetKeyDown(KeyCode.RightArrow)){
-        transform.Translate(0.01f, 0f, 0f);
+        transform.Translate(0.05f, 0f, 0f);
       }
     }
 }

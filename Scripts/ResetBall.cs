@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class ResetBall : MonoBehaviour
 {
+    //Create create;
     Rigidbody rb;
     GameObject BowlingBall;
     public int turnCount = 0;
@@ -18,9 +20,10 @@ public class ResetBall : MonoBehaviour
     {
         float yPos = transform.position.y;
         if(yPos <=-9.14){
-            Destroy(BowlingBall);
+            rb.Sleep();
             turnCount++;
-            BowlingBall = Instantiate(BowlingBall, Create.starting, Quaternion.identity);
+            
+            transform.position = new Vector3((float) 0.09,(float) 4.889, (float) -21.21);
         }
     }
 }

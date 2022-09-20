@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7091128169665353302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.03, z: 1.91}
-  m_LocalScale: {x: -0.044101, y: 1, z: 0.23245}
+  m_LocalPosition: {x: 0, y: -0.03, z: 1.35}
+  m_LocalScale: {x: -0.044101, y: 1, z: 0.14421198}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4232038724634010146}
@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 7091128169028666513}
   - component: {fileID: 7091128169028666516}
   - component: {fileID: 7091128169028666523}
+  - component: {fileID: 6158693495397178458}
   m_Layer: 0
   m_Name: BowlingBall
   m_TagString: Untagged
@@ -141,8 +142,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8390317663819797718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11, y: 0, z: -8.1913}
-  m_LocalScale: {x: 1, y: 1, z: 0.85175}
+  m_LocalPosition: {x: -0.11, y: 0, z: -8.3755}
+  m_LocalScale: {x: 1, y: 1, z: 1.0171599}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7091128169665353301}
@@ -256,3 +257,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xVal: 0
+--- !u!114 &6158693495397178458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8390317663819797718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c2a8d85c90bd94fa26c4c11774d458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnCount: 0
