@@ -9,14 +9,23 @@ public class DestoryPin : MonoBehaviour
 
      int count = 0;
 
+     bool upRight;
+
     GameObject pin;
 
+    GameObject BowlingBall;
+
     Vector3 newPos;
+
+    float time;
+
+    Collision other;
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        pin = GetComponent<GameObject>();
+        //pin = GetComponent<GameObject>();
         pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         
     }
@@ -24,30 +33,33 @@ public class DestoryPin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool upRight = true;
+        newPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        upRight = true;
         
-        if(count == 100){
+        
+            if(count == 10000){
+            
+            Debug.Log(newPos);
             Debug.Log(count);
-
-            newPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-            if(/*rb.transform.rotation.eulerAngles.x > 0.001 && rb.transform.rotation.eulerAngles.x < 0.01 && rb.transform.rotation.eulerAngles.z > 0.001 && rb.transform.rotation.eulerAngles.z < 0.01*/ pos != newPos){
+            Debug.Log(upRight);
+            
+            if(pos != newPos || transform.position.y <= -8){
                 upRight = false;
                 Debug.Log(upRight);
-            }
-            /*else if (pos != newPos){
-                upRight = false;
-            }*/
-            
-                
+                }    
             
             if(upRight == false){
-                Destroy(pin);
+                Destroy(gameObject);
             }
+
             count = 0;
-        }
-        else{
-            Debug.Log(count);
-            count = count + 1; 
-        }
+            }
+        Debug.Log(count);
+        count = count + 1;
+         
+          
     }
 }
+        
+
+
